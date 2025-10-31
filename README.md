@@ -1,36 +1,128 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧠 XYZ Innovations — Portfolio CMS (Next.js + Tailwind + Framer Motion)
 
-## Getting Started
+A modern **portfolio + admin dashboard CMS** built using **Next.js**, **React**, and **Tailwind CSS**.  
+It allows the admin to manage **services** and **messages** dynamically with local storage persistence.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+### 🌐 Public Portfolio
+- Beautiful **Hero section** with company introduction  
+- **Services** displayed dynamically from CMS context  
+- **Contact form** (simulated message storage)  
+- Responsive & mobile-friendly design  
+- Dark/Light mode toggle  
+
+### 🔒 Admin Dashboard
+- Secure **admin login page** (hardcoded credentials)  
+- **Manage Services** — add or delete services  
+- **View Messages** — see all submitted messages  
+- **Mark messages as read/unread**  
+- LocalStorage-based persistence  
+- Animated UI using **Framer Motion**
+
+---
+
+## 🧾 Tech Stack
+
+| Category | Technologies Used |
+|-----------|------------------|
+| Frontend | Next.js (App Router), React |
+| Styling | Tailwind CSS |
+| Animation | Framer Motion |
+| Icons | Lucide React |
+| State Management | React Context API |
+| Storage | LocalStorage (persistent data) |
+
+---
+
+## ⚙️ Installation & Setup
 
 ```bash
+# 1️⃣ Clone the repository
+git clone https://github.com/madhusmitamallick2309/oditech-project.git
+
+# 2️⃣ Navigate into the folder
+cd xyz-innovations
+
+# 3️⃣ Install dependencies
+npm install
+
+# 4️⃣ Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit 👉 **http://localhost:3000**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🔑 Admin Login Details
 
-## Learn More
+| Field | Value |
+|--------|--------|
+| **Username** | `admin@example.com` |
+| **Password** | `admin123` |
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🧩 Folder Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+src/
+ ├─ app/
+ │   ├─ page.tsx            # Main portfolio page
+ │   ├─ admin/
+ │   │   ├─ login/page.tsx  # Admin Login Page
+ │   │   └─ dashboard/page.tsx  # Admin Dashboard
+ │
+ ├─ components/
+ │   ├─ Hero.tsx
+ │   ├─ Services.tsx
+ │   ├─ ThemeToggle.tsx
+ │   └─ ...
+ │
+ ├─ context/
+ │   ├─ CMSContext.tsx      # Manages services & messages
+ │   └─ ThemeContext.tsx    # Handles dark/light theme
+ │
+ ├─ styles/
+ │   └─ globals.css
+ │
+ └─ ...
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🌗 Theme Support
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Supports **Dark Mode** and **Light Mode** toggle via `ThemeContext`
+- Persists user preference across sessions  
+
+---
+
+## 💾 Data Persistence
+
+All services and messages are stored locally using **LocalStorage**, so the data remains even after refreshing or restarting.
+
+---
+
+## 🧠 Future Enhancements
+
+- 🔐 JWT-based authentication  
+- 🗄️ Connect to real backend (Node.js / Firebase)  
+- 📩 Real contact form submission via API  
+- 🧾 Export messages as CSV/PDF  
+- 🌍 Multi-language support  
+
+---
+
+## 👩‍💻 Author
+
+**Madhusmita Mallick**  
+📍 India  
+💼 Built as part of a full-stack portfolio project  
+
+---
+
+
